@@ -1,7 +1,8 @@
 import React from "react";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import { LifebuoyIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -66,12 +67,11 @@ const Cart = () => {
                   <div className="flex flex-1 items-end justify-between text-sm">
                     <div className="text-gray-500">
                       <label
-                        htmlFor="password"
-                        className="block text-sm font-medium leading-6 text-gray-900"
+                        htmlFor="quantity"
+                        className="inline mr-5 text-sm font-medium leading-6 text-gray-900"
                       >
                         Qty
                       </label>
-                      Qty{" "}
                       <select>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -112,14 +112,16 @@ const Cart = () => {
         <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
           <p>
             or
-            <button
-              type="button"
-              className="font-medium text-indigo-600 hover:text-indigo-500"
-              onClick={() => setOpen(false)}
-            >
-              Continue Shopping
-              <span aria-hidden="true"> &rarr;</span>
-            </button>
+            <Link to="/">
+              <button
+                type="button"
+                className="font-medium text-indigo-600 hover:text-indigo-500"
+                onClick={() => setOpen(false)}
+              >
+                Continue Shopping
+                <span aria-hidden="true"> &rarr;</span>
+              </button>
+            </Link>
           </p>
         </div>
       </div>
