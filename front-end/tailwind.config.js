@@ -4,5 +4,9 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: ["@tailwindcss/aspect-ratio", "@tailwindcss/forms"],
+  plugins: [
+    "@tailwindcss/aspect-ratio",
+    "@tailwindcss/forms",
+    "@tailwindcss/forms",
+  ],
 };
