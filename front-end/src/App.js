@@ -13,11 +13,16 @@ import {
 import CartPage from "./features/pages/CartPage";
 import Checkout from "./features/pages/Checkout";
 import ProductDetailPage from "./features/pages/ProductDetailPage";
+import Protected from "./features/auth/components/Protected";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: (
+      <Protected>
+        <Home></Home>,
+      </Protected>
+    ),
   },
   {
     path: "/login",
@@ -30,15 +35,27 @@ const router = createBrowserRouter([
   // only for testing
   {
     path: "/cart",
-    element: <CartPage></CartPage>,
+    element: (
+      <Protected>
+        <CartPage></CartPage>,
+      </Protected>
+    ),
   },
   {
     path: "/checkout",
-    element: <Checkout></Checkout>,
+    element: (
+      <Protected>
+        <Checkout></Checkout>,
+      </Protected>
+    ),
   },
   {
     path: "/product-details/:id",
-    element: <ProductDetailPage></ProductDetailPage>,
+    element: (
+      <Protected>
+        <ProductDetailPage></ProductDetailPage>,
+      </Protected>
+    ),
   },
 ]);
 
