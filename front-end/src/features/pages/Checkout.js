@@ -8,10 +8,9 @@ import {
 } from "../cart/cartSlice";
 import { useForm } from "react-hook-form";
 import { selectLoggedInUser, updateUserAsync } from "../auth/authSlice";
-import { createOrderAsync } from "../order/orderSlice";
+import { createOrderAsync, selectCurrentOrder } from "../order/orderSlice";
 
 const Checkout = () => {
-  const [open, setOpen] = useState(true);
   const dispatch = useDispatch();
 
   const {
@@ -31,7 +30,7 @@ const Checkout = () => {
   );
   const totalItems = items.reduce((total, item) => item.quantity + total, 0);
   const user = useSelector(selectLoggedInUser);
-
+  const currentOrder = useSelector(selectCurrentOrder);
   const handleQuantity = (e, item) => {
     dispatch(updateCartAsync({ ...item, quantity: +e.target.value }));
   };
@@ -41,32 +40,44 @@ const Checkout = () => {
 
   const handleAddress = (e) => {
     console.log(e.target.value);
-    setSelectedAddress(e.target.value);
+    setSelectedAddress(user.addresses[e.target.value]);
   };
   const handlePayment = (e) => {
     console.log(e.target.value);
     setPaymentMethod(e.target.value);
   };
-  const handlerOrder = (e) => {
-    const order = {
-      items,
-      totalAmount,
-      totalItems,
-      user,
-      paymentMethod,
-      selectedAddress,
-    };
 
+  const handlerOrder = (e) => {
+    if (selectedAddress && paymentMethod) {
+      const order = {
+        items,
+        totalAmount,
+        totalItems,
+        user,
+        paymentMethod,
+        selectedAddress,
+        status: "pending", // other status can be delivered, received.
+      };
+      dispatch(createOrderAsync(order));
+      // need to redirect from here to new page of order success
+    } else {
+      // TODO : we can use proper messaging popoup here
+      alert("Enter Address and Payment Method");
+    }
     // TODO : redirect to order-success page
     // TODO : clear cart after order
     // TODO : on server chage the stock number of items
-
-    dispatch(createOrderAsync(order));
   };
 
   return (
     <>
       {!items.length && <Navigate to="/" replace={true}></Navigate>}
+      {currentOrder && (
+        <Navigate
+          to={`/order-success/${currentOrder.id}`}
+          replace={true}
+        ></Navigate>
+      )}
       <div className="mx-auto max-w-7xl px-2 sm:px-2 lg:px-2">
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
           <div className="lg:col-span-3">
@@ -433,7 +444,6 @@ const Checkout = () => {
                       <button
                         type="button"
                         className="font-medium text-indigo-600 hover:text-indigo-500"
-                        onClick={() => setOpen(false)}
                       >
                         Continue Shopping
                         <span aria-hidden="true"> &rarr;</span>
