@@ -1055,8 +1055,17 @@
         {
           "name": "Keshav Regmi",
           "email": "temp@gmail.com",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "pinCode": "560056",
           "phone": "8217570031",
-          "street": "BDA Outer ring road, Nagarbhabi",
+          "street": "BDA Outer ring road, Naagarabhaavi"
+        },
+        {
+          "name": "Ketchup",
+          "email": "demo@gmail.com",
+          "phone": "8217570031",
+          "street": "BDA Outer ring road, Naagarabhaavi",
           "city": "Bengaluru",
           "state": "Karnataka",
           "pinCode": "560056"
@@ -1081,7 +1090,28 @@
       "id": 2
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "title": "iPhone X",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/2/1.jpg",
+        "https://i.dummyjson.com/data/products/2/2.jpg",
+        "https://i.dummyjson.com/data/products/2/3.jpg",
+        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 1,
+      "id": 1
+    }
+  ],
   "orders": [
     {
       "items": [
@@ -1136,6 +1166,213 @@
       },
       "status": "pending",
       "id": 1
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        },
+        {
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 2
+        }
+      ],
+      "totalAmount": 2148,
+      "totalItems": 2,
+      "user": {
+        "email": "temp@gmail.com",
+        "password": "Ksubro@1",
+        "addresses": [
+          {
+            "name": "Keshav Regmi",
+            "email": "temp@gmail.com",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Nagarbhabi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          },
+          {
+            "name": "Ketchup",
+            "email": "demo@gmail.com",
+            "phone": "+918217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ketchup",
+        "email": "demo@gmail.com",
+        "phone": "+918217570031",
+        "street": "BDA Outer ring road, Naagarabhaavi",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560056"
+      },
+      "status": "pending",
+      "id": 2
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 3
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "email": "temp@gmail.com",
+        "password": "Ksubro@1",
+        "addresses": [
+          {
+            "name": "Keshav Regmi",
+            "email": "temp@gmail.com",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Nagarbhabi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          },
+          {
+            "name": "Ketchup",
+            "email": "demo@gmail.com",
+            "phone": "+918217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Keshav Regmi",
+        "email": "temp@gmail.com",
+        "phone": "8217570031",
+        "street": "BDA Outer ring road, Nagarbhabi",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560056"
+      },
+      "status": "pending",
+      "id": 3
+    },
+    {
+      "items": [
+        {
+          "title": "Infinix INBOOK",
+          "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+          "price": 1099,
+          "discountPercentage": 11.83,
+          "rating": 4.54,
+          "stock": 96,
+          "brand": "Infinix",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/9/1.jpg",
+            "https://i.dummyjson.com/data/products/9/2.png",
+            "https://i.dummyjson.com/data/products/9/3.png",
+            "https://i.dummyjson.com/data/products/9/4.jpg",
+            "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 1099,
+      "totalItems": 1,
+      "user": {
+        "email": "temp@gmail.com",
+        "password": "Ksubro@1",
+        "addresses": [
+          {
+            "name": "Keshav Regmi",
+            "email": "temp@gmail.com",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Nagarbhabi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          },
+          {
+            "name": "Ketchup",
+            "email": "demo@gmail.com",
+            "phone": "+918217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Keshav Regmi",
+        "email": "temp@gmail.com",
+        "phone": "8217570031",
+        "street": "BDA Outer ring road, Nagarbhabi",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560056"
+      },
+      "status": "pending",
+      "id": 4
     }
   ]
 }
