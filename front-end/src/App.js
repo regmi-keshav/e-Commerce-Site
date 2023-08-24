@@ -29,13 +29,20 @@ import AdminProductDetailPage from "./features/pages/AdminProductDetailPage";
 import AdminHome from "./features/pages/AdminHome";
 import AdminProductFormPage from "./features/pages/AdminProductFormPage";
 import AdminOrdersPage from "./features/pages/AdminOrdersPage";
+import { positions, Provider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+
+const options = {
+  timeout: 5000,
+  position: positions.BOTTOM_CENTER,
+};
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <Protected>
-        <Home></Home>,
+        <Home></Home>
       </Protected>
     ),
   },
@@ -43,7 +50,7 @@ const router = createBrowserRouter([
     path: "/admin",
     element: (
       <ProtectedAdmin>
-        <AdminHome></AdminHome>,
+        <AdminHome></AdminHome>
       </ProtectedAdmin>
     ),
   },
@@ -76,7 +83,7 @@ const router = createBrowserRouter([
     path: "/product-details/:id",
     element: (
       <Protected>
-        <ProductDetailPage></ProductDetailPage>,
+        <ProductDetailPage></ProductDetailPage>
       </Protected>
     ),
   },
@@ -138,10 +145,9 @@ const router = createBrowserRouter([
   },
 ]);
 
-function App() {
+const App = () => {
   const dispatch = useDispatch();
   const user = useSelector(selectLoggedInUser);
-
   useEffect(() => {
     if (user) {
       dispatch(fetchItemsByUserIdAsync(user.id));
@@ -151,9 +157,11 @@ function App() {
 
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <Provider template={AlertTemplate} {...options}>
+        <RouterProvider router={router} />
+      </Provider>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,14 +1,16 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import ProductDetails from "../product/components/ProductDetails";
+import Footer from "../common/Footer";
 
 const ProductDetailPage = () => {
   return (
-    <div>
+    <>
       <Navbar>
         <ProductDetails></ProductDetails>
       </Navbar>
-    </div>
+      <Footer></Footer>
+    </>
   );
 };
 

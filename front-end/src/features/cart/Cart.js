@@ -9,13 +9,19 @@ import {
   updateCartAsync,
   selectItems,
   deleteItemFromCartAsync,
+  selectCartStatus,
 } from "./cartSlice";
 import { discountedPrice } from "../../app/constants";
+import { RotatingLines } from "react-loader-spinner";
+import Modal from "../common/Modal";
 
 const Cart = () => {
   const [open, setOpen] = useState(true);
   const dispatch = useDispatch();
   const items = useSelector(selectItems);
+  const status = useSelector(selectCartStatus);
+  const [openModal, setOpenModal] = useState(null);
+
   const totalAmount = items.reduce(
     (amount, item) => discountedPrice(item) * item.quantity + amount,
     0
@@ -32,11 +38,20 @@ const Cart = () => {
       {!items.length && <Navigate to="/" replace={true}></Navigate>}
 
       <div className="mx-auto mt-12 bg-white max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl pt-2 font-bold tracking-tight text-gray-900">
-          Cart
-        </h1>
         <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
+          <h1 className="text-4xl pt-2 font-bold tracking-tight text-gray-900">
+            Cart
+          </h1>
           <div className="flow-root">
+            {status === "loading" ? (
+              <RotatingLines
+                strokeColor="grey"
+                strokeWidth="5"
+                animationDuration="0.75"
+                width="96"
+                visible={true}
+              />
+            ) : null}
             <ul role="list" className="-my-6 divide-y divide-gray-200">
               {items.map((item) => (
                 <li key={item.id} className="flex py-6">
@@ -78,8 +93,19 @@ const Cart = () => {
                         </select>
                       </div>
                       <div className="flex">
+                        <Modal
+                          title={`Delete ${item.title}`}
+                          message="Are you sure you want to delete this cart item?"
+                          dangerOption="Delete"
+                          cancelOption="Cancel"
+                          cancelAction={(e) => setOpenModal(null)}
+                          dangerAction={(e) => handleRemove(e, item.id)}
+                          showModal={openModal === item.id}
+                        ></Modal>
                         <button
-                          onClick={(e) => handleRemove(e, item.id)}
+                          onClick={(e) => {
+                            setOpenModal(item.id);
+                          }}
                           type="button"
                           className="font-medium text-indigo-600 hover:text-indigo-500"
                         >
