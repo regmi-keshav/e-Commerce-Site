@@ -1110,28 +1110,7 @@
       "id": 3
     }
   ],
-  "cart": [
-    {
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/2/1.jpg",
-        "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": 1,
-      "id": 1
-    }
-  ],
+  "cart": [],
   "orders": [
     {
       "items": [
@@ -1184,7 +1163,7 @@
         "state": "Karnataka",
         "pinCode": "560056"
       },
-      "status": "pending",
+      "status": "delivered",
       "id": 1
     },
     {
@@ -1449,6 +1428,394 @@
       },
       "status": "pending",
       "id": 5
+    },
+    {
+      "items": [
+        {
+          "title": "Gulab Powder 50 Gram",
+          "description": "Dry Rose Flower Powder Gulab Powder 50 Gram • Treats Wounds",
+          "price": 70,
+          "discountPercentage": 13.58,
+          "rating": 4.87,
+          "stock": 47,
+          "brand": "Dry Rose",
+          "category": "groceries",
+          "thumbnail": "https://i.dummyjson.com/data/products/25/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/25/1.png",
+            "https://i.dummyjson.com/data/products/25/2.jpg",
+            "https://i.dummyjson.com/data/products/25/3.png",
+            "https://i.dummyjson.com/data/products/25/4.jpg",
+            "https://i.dummyjson.com/data/products/25/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 2
+        }
+      ],
+      "totalAmount": 60,
+      "totalItems": 1,
+      "user": {
+        "email": "temp@gmail.com",
+        "password": "Ksubro@1",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Keshav Regmi",
+            "email": "temp@gmail.com",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi"
+          },
+          {
+            "name": "Ketchup",
+            "email": "demo@gmail.com",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Ketchup",
+        "email": "demo@gmail.com",
+        "phone": "8217570031",
+        "street": "BDA Outer ring road, Naagarabhaavi",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560056"
+      },
+      "status": "pending",
+      "id": 6
+    },
+    {
+      "items": [
+        {
+          "title": "Flying Wooden Bird",
+          "description": "Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm",
+          "price": 51,
+          "discountPercentage": 15.58,
+          "rating": 4.41,
+          "stock": 17,
+          "brand": "Flying Wooden",
+          "category": "home-decoration",
+          "thumbnail": "https://i.dummyjson.com/data/products/27/thumbnail.webp",
+          "images": [
+            "https://i.dummyjson.com/data/products/27/1.jpg",
+            "https://i.dummyjson.com/data/products/27/2.jpg",
+            "https://i.dummyjson.com/data/products/27/3.jpg",
+            "https://i.dummyjson.com/data/products/27/4.jpg",
+            "https://i.dummyjson.com/data/products/27/thumbnail.webp"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 43,
+      "totalItems": 1,
+      "user": {
+        "email": "temp@gmail.com",
+        "password": "Ksubro@1",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Keshav Regmi",
+            "email": "temp@gmail.com",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi"
+          },
+          {
+            "name": "Ketchup",
+            "email": "demo@gmail.com",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Keshav Regmi",
+        "email": "temp@gmail.com",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560056",
+        "phone": "8217570031",
+        "street": "BDA Outer ring road, Naagarabhaavi"
+      },
+      "status": "pending",
+      "id": 7
+    },
+    {
+      "items": [
+        {
+          "title": "- Daal Masoor 500 grams",
+          "description": "Fine quality Branded Product Keep in a cool and dry place",
+          "price": 20,
+          "discountPercentage": 4.81,
+          "rating": 4.44,
+          "stock": 133,
+          "brand": "Saaf & Khaas",
+          "category": "groceries",
+          "thumbnail": "https://i.dummyjson.com/data/products/21/thumbnail.png",
+          "images": [
+            "https://i.dummyjson.com/data/products/21/1.png",
+            "https://i.dummyjson.com/data/products/21/2.jpg",
+            "https://i.dummyjson.com/data/products/21/3.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 19,
+      "totalItems": 1,
+      "user": {
+        "email": "temp@gmail.com",
+        "password": "Ksubro@1",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Keshav Regmi",
+            "email": "temp@gmail.com",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi"
+          },
+          {
+            "name": "Ketchup",
+            "email": "demo@gmail.com",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Keshav Regmi",
+        "email": "temp@gmail.com",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560056",
+        "phone": "8217570031",
+        "street": "BDA Outer ring road, Naagarabhaavi"
+      },
+      "status": "pending",
+      "id": 8
+    },
+    {
+      "items": [
+        {
+          "title": "Fog Scent Xpressio Perfume",
+          "description": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
+          "price": 13,
+          "discountPercentage": 8.14,
+          "rating": 4.59,
+          "stock": 61,
+          "brand": "Fog Scent Xpressio",
+          "category": "fragrances",
+          "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
+          "images": [
+            "https://i.dummyjson.com/data/products/13/1.jpg",
+            "https://i.dummyjson.com/data/products/13/2.png",
+            "https://i.dummyjson.com/data/products/13/3.jpg",
+            "https://i.dummyjson.com/data/products/13/4.jpg",
+            "https://i.dummyjson.com/data/products/13/thumbnail.webp"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 12,
+      "totalItems": 1,
+      "user": {
+        "email": "temp@gmail.com",
+        "password": "Ksubro@1",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Keshav Regmi",
+            "email": "temp@gmail.com",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi"
+          },
+          {
+            "name": "Ketchup",
+            "email": "demo@gmail.com",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Keshav Regmi",
+        "email": "temp@gmail.com",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560056",
+        "phone": "8217570031",
+        "street": "BDA Outer ring road, Naagarabhaavi"
+      },
+      "status": "pending",
+      "id": 9
+    },
+    {
+      "items": [
+        {
+          "title": "Oil Free Moisturizer 100ml",
+          "description": "Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.",
+          "price": 40,
+          "discountPercentage": 13.1,
+          "rating": 4.56,
+          "stock": 88,
+          "brand": "Dermive",
+          "category": "skincare",
+          "thumbnail": "https://i.dummyjson.com/data/products/18/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/18/1.jpg",
+            "https://i.dummyjson.com/data/products/18/2.jpg",
+            "https://i.dummyjson.com/data/products/18/3.jpg",
+            "https://i.dummyjson.com/data/products/18/4.jpg",
+            "https://i.dummyjson.com/data/products/18/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 35,
+      "totalItems": 1,
+      "user": {
+        "email": "temp@gmail.com",
+        "password": "Ksubro@1",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Keshav Regmi",
+            "email": "temp@gmail.com",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi"
+          },
+          {
+            "name": "Ketchup",
+            "email": "demo@gmail.com",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Keshav Regmi",
+        "email": "temp@gmail.com",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560056",
+        "phone": "8217570031",
+        "street": "BDA Outer ring road, Naagarabhaavi"
+      },
+      "status": "pending",
+      "id": 10
+    },
+    {
+      "items": [
+        {
+          "title": "3D Embellishment Art Lamp",
+          "description": "3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)",
+          "price": 20,
+          "discountPercentage": 16.49,
+          "rating": 4.82,
+          "stock": 54,
+          "brand": "LED Lights",
+          "category": "home-decoration",
+          "thumbnail": "https://i.dummyjson.com/data/products/28/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/28/1.jpg",
+            "https://i.dummyjson.com/data/products/28/2.jpg",
+            "https://i.dummyjson.com/data/products/28/3.png",
+            "https://i.dummyjson.com/data/products/28/4.jpg",
+            "https://i.dummyjson.com/data/products/28/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 17,
+      "totalItems": 1,
+      "user": {
+        "email": "temp@gmail.com",
+        "password": "Ksubro@1",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Keshav Regmi",
+            "email": "temp@gmail.com",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi"
+          },
+          {
+            "name": "Ketchup",
+            "email": "demo@gmail.com",
+            "phone": "8217570031",
+            "street": "BDA Outer ring road, Naagarabhaavi",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "pinCode": "560056"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Keshav Regmi",
+        "email": "temp@gmail.com",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560056",
+        "phone": "8217570031",
+        "street": "BDA Outer ring road, Naagarabhaavi"
+      },
+      "status": "pending",
+      "id": 11
     }
   ]
 }

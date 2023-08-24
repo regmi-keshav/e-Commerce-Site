@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { selectLoggedInUser } from "../../auth/authSlice";
 import { addToCartAsync } from "../../cart/cartSlice";
+import { discountedPrice } from "../../../app/constants";
 
 // TODO : In server data we will add colors, sizes, highlights to each products
 
@@ -148,8 +149,11 @@ export default function AdminProductDetails() {
             {/* Options */}
             <div className="mt-4 lg:row-span-3 lg:mt-0">
               <h2 className="sr-only">Product information</h2>
-              <p className="text-3xl tracking-tight text-gray-900">
+              <p className="text-xl line-through tracking-tight text-gray-900">
                 ${product.price}
+              </p>
+              <p className="text-3xl tracking-tight text-gray-900">
+                ${discountedPrice(product)}
               </p>
 
               {/* Reviews */}
