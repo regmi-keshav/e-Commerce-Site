@@ -7,7 +7,7 @@ import {
   deleteItemFromCartAsync,
 } from "../cart/cartSlice";
 import { useForm } from "react-hook-form";
-import { updateUserAsync } from "../auth/authSlice";
+import { updateUserAsync } from "../user/userSlice";
 import { createOrderAsync, selectCurrentOrder } from "../order/orderSlice";
 import { selectUserInfo } from "../user/userSlice";
 import { discountedPrice } from "../../app/constants";
@@ -379,7 +379,9 @@ const Checkout = () => {
                                   {item.product.title}
                                 </a>
                               </h3>
-                              <p className="ml-4">$ {discountedPrice(item)}</p>
+                              <p className="ml-4">
+                                $ {discountedPrice(item.product)}
+                              </p>
                             </div>
                             <p className="mt-1 text-sm text-gray-500">
                               {item.product.brand}
