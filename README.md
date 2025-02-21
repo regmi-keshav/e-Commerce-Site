@@ -4,6 +4,14 @@ This project is an E-commerce website developed using the **MERN stack** (MongoD
 
 ---
 
+## Demo
+
+Check out the live version of the e-commerce website hosted [saun-shop](https://saun-shop-by-keshav.vercel.app/login).
+
+You can browse products, log in, and test the functionality directly!
+
+---
+
 ## Features
 
 - **User Authentication**: Secure user login and registration using JWT authentication and password hashing.
