@@ -47,7 +47,7 @@ cd e-Commerce-Site
 1. Navigate to the frontend directory:
 
     ```bash
-    cd client
+    cd front-end
     ```
 
 2. Install the dependencies:
@@ -69,7 +69,7 @@ cd e-Commerce-Site
 1. Navigate to the backend directory:
 
     ```bash
-    cd server
+    cd back-end
     ```
 
 2. Install the backend dependencies:
